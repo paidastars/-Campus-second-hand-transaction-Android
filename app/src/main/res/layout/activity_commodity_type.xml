@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/tv_refresh"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="刷新"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+
+        android:gravity="center"
+        android:layout_toEndOf="@+id/tv_type"
+        android:layout_toRightOf="@+id/tv_type"
+        android:background="@color/colorGreen"
+        android:text="返回"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="100dp"
+        android:layout_weight="1"
+        android:background="@color/colorGreen"
+        android:gravity="center_horizontal"
+        android:text="生活用品"
+        android:typeface="serif"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_type"
+        android:background="@color/colorBlack"
+        android:layout_marginTop="5dp"/>
+    <ListView
+        android:id="@+id/list_commodity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

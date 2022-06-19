@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="product_type">
+        <item>请选择类别</item>
+        <item>发布闲置</item>
+        <item>求购二手</item>
+    </string-array>
+</resources>
